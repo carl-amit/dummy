@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1800px;
+  }
+}
+
+.footer-section {
+  .logo-image {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+    padding: 0 40px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    li {
+      color: $color-white;
+      padding: 0 30px;
+      a {
+        text-decoration: none;
+        color: $color-black;
+        line-height: 34px;
+      }
+    }
+  }
+  .copyright-text {
+    padding-top: 1.5rem;
+  }
+}
